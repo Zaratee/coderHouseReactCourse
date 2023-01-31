@@ -1,0 +1,100 @@
+.navBarContainer {
+    width: 100%;
+    background-color: #ddd48f;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+
+.wrapper {
+    padding: 2vh 3vw 2vh 3vw;
+    display: flex;
+    flex-direction: row;
+}
+
+.logoContainer {
+    background-color: aquamarine;
+    width: fit-content;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.logoContainer img {
+    width: 6vw;
+    height: 10vh;
+}
+
+.greenLine {
+    width: 100%;
+    height: 15px;
+    background-color: #6b8c21;
+    display: flex;
+    align-items: center;
+}
+
+.brownLine {
+    width: 100%;
+    height: 5px;
+    background-color: #ffffff;
+}
+
+.btnContainer {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.btnMenuContainer {
+    display: flex;
+    align-items: center;
+    width: 40%;
+    justify-content: space-around;
+    margin-left: 5vw;
+}
+
+.buttonMenu {
+    font-size: 20px;
+    border-radius: 5px;
+    font-family: Geneva, Tahoma, sans-serif;
+    font-weight: 600;
+    padding: 1vw;
+    margin-right: 1vw;
+    user-select: none;
+    cursor: pointer;
+}
+
+.selectedButtonMenu {
+    background-color: #ffffff;
+    color: #6b8c21;
+    border: 3px solid #6b8c21;
+}
+
+.cartIconContainer {
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80px;
+    height: 80px;
+    border-radius: 50px;
+    position: relative;
+    cursor: pointer;
+}
+
+.cartIconContainer img {
+    width: 50px;
+    height: 50px;
+    user-select: none;
+}
+
+.badge {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    top: 0;
+    right: 0;
+    background-color: rgb(198, 65, 65);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
