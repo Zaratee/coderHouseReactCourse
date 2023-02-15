@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import CartWidget from '../cart-widget';
 import styles from "./styles.module.css";
 
 const menuSections = [
@@ -38,10 +39,7 @@ function NavBar() {
                         }
 
                     </div>
-                    <div className={styles.cartIconContainer}>
-                        <div className={styles.badge}>1</div>
-                        <img src='/cartIcon.png' />
-                    </div>
+                    <CartWidget />
                 </div>
 
             </div>
