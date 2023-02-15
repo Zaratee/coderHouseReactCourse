@@ -1,19 +1,24 @@
 import React, { useState } from 'react'
 import CartWidget from '../cart-widget';
 import styles from "./styles.module.css";
+import { NavLink } from "react-router-dom";
 
 const menuSections = [
     {
-        name: "INICIO"
+        name: "INICIO",
+        path: "/"
     },
     {
-        name: "AGUACATES"
+        name: "AGUACATES",
+        path: "/Products"
     },
     {
-        name: "NOSOTROS"
+        name: "NOSOTROS",
+        path: "/About"
     },
     {
-        name: "CONTACTO"
+        name: "CONTACTO",
+        path: "/Contact"
     },
 ]
 
@@ -32,7 +37,7 @@ function NavBar() {
                         {
                             menuSections.map((section, index) => {
                                 return (
-                                    <div onClick={() => setSelection(index)} className={`${styles.buttonMenu} ${index == selection && styles.selectedButtonMenu}`}> {section.name}</div>
+                                    <NavLink to={section.path} onClick={() => setSelection(index)} className={`${styles.buttonMenu} ${index == selection && styles.selectedButtonMenu}`}> {section.name}</NavLink>
                                 )
                             })
 

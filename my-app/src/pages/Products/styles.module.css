@@ -1,0 +1,45 @@
+.container {
+    width: 100vw;
+    height: 100vh;
+}
+
+.container h1 {
+    text-align: center;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 35px;
+}
+
+.imgContainer {
+    width: 90px;
+    height: 90px;
+    border-radius: 100px;
+    overflow: hidden;
+    border: 3px solid #6b8c21;
+    transition: all ease .5s;
+    cursor: pointer;
+}
+
+.imgContainer:hover {
+    transform: scale(1.2);
+}
+
+.imgContainer img {
+    width: 90px;
+    height: 90px;
+}
+
+.imgContainer p {
+    color: #6b8c21;
+}
+
+.productContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
